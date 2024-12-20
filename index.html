@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>Pixel</title>
+
+    <!-- internal styling -->
+    <style>
+        body{
+            scroll-behavior: smooth;
+        }
+        .home_image_div {
+            width: 100%;
+            height: 60vh;
+            background-image: url(pixelbg2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .service_image_div::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(pixelimg3.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: opacity(0.5);
+            z-index: 1;
+        }
+
+        .service_image_div {
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .service_image_div .service_content {
+            position: relative;
+            z-index: 2;
+            color: black;
+        }
+
+        .big_container_img {
+            height: 50vh;
+            width: 97%;
+            background-image: url(pixbg2.webp);
+        }
+
+        .contact_img::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(pixelbgimg.jpg);
+            opacity: 0.7;
+            z-index: 1;
+        }
+
+        .contact_img {
+            height: auto;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact_img .form_content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0">
+
+    <!-- Nav bar section -->
+    <nav class="navbar navbar-expand-md justify-content-center bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler btn bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcollapse" title="collapse_button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-nav collapse navbar-collapse justify-content-md-center align-items-md-center" id="navbarcollapse">
+                <div class="nav-link"><a href="#" class="btn text-white">Phones</a></div>
+                <div class="nav-link"><a href="#" class="btn text-white">Watches & Trackers</a></div>
+                <div class="nav-link"><a href="#" class="btn text-white">Accessories</a></div>
+                <div class="nav-link"><a href="#" class="btn text-white">Support</a></div>>
+            </div>
+        </div>
+    </nav>
+    <!-- Home image section -->
+    <div class="container-fluid p-0">
+        <div class="d-flex flex-column home_image_div justify-content-center align-items-center ">
+            <h1 class="text-white">GOOGLE PIXEL</h1>
+            <h5 class="text-white">“Engineered by Google. Made for everyone.”</h5>
+        </div>
+    </div>
+
+    <!-- home card-->
+    <div class="container d-flex flex-column pt-5 w-75">
+
+        <!-- home cards section 1-->
+        <div class="row">
+            <div class="card col-md-4 p-1 border-0">
+                <div class="card-header border-0">
+                    <img src="p9.jpg"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h2 class="text-success h4">Pixel 9</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                    </p>
+                </div>
+                <div class="card-footer border-0">
+                    <div class="d-flex w-100 justify-content-center">
+                        <button class="btn btn-primary">Find Retailers</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-4 p-1 border-0">
+                <div class="card-header border-0">
+                    <img src="p9pro.jpg"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h2 class="text-primary h4">Pixel 9 Pro</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                    </p>
+                </div>
+                <div class="card-footer border-0">
+                    <div class="d-flex w-100 justify-content-center">
+                        <button class="btn btn-primary">Find Retailers</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-4 p-1 border-0">
+                <div class="card-header border-0">
+                    <img src="p9xl.jpg"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h2 class="text-secondary h4">Pixel 9 Pro XL</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                    </p>
+                </div>
+                <div class="card-footer border-0">
+                    <div class="d-flex w-100 justify-content-center">
+                        <button class="btn btn-primary">Find Retailers</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- home cards section 2-->
+        <div class="row pt-3">
+            <div class="col-md-6 card p-1 border-0"></div>
+                <div class="card-header border-0">
+                    <img src="gpixel.webp"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h2 class="h4 text-secondary mb-4">The only phone engineered by Google.</h2>
+                    <p class="text-justify">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, provident. Animi illum earum
+                        quidem expedita, natus sapiente repellat laudantium quibusdam atque perspiciatis fugit. Harum
+                        eum adipisci aut modi quos maiores.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 card p-1 border-0">
+                <div class="card-header border-0">
+                    <img src="gpixel2.webp"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column align-items-center pb-0 mb-0">
+                    <h2 class="h4 text-secondary mb-4">Make magic happen with Pixel.</h2>
+                    <p class="">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos saepe nihil quod nostrum aut
+                        quibusdam incidunt omnis! Illo distinctio mollitia eos libero error quaerat sunt....
+                    </p>
+                </div>
+                <div class="card-footer border-0">
+                    <div class="d-flex justify-content-end w-100 pe-3">
+                        <button class="btn btn-light border"> <span class="px-2 text-secondary">Read
+                                More</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service section -->
+    <div class="container-fluid p-0 service_image_div d-flex justify-content-center ">
+        <div class="d-flex flex-column  justify-content-center align-items-center w-50 service_content py-5">
+            <h1 class="h3">The perfect companions.</h1>
+            <p class="text-center fw-med">bun iobortik ebs in eusmod libero Ebam a mt attuvan- condgnenturtv
+                tgn quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum excepturi nobis facere
+                neque corrupti.vest Lorem ipsum dolor sit amet consectetur.
+            </p>
+        </div>
+    </div>
+
+    <!-- service cards -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 p-1 border-0 card">
+                <div class="card-header border-0">
+                    <img src="pbuds.jpg"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column align-items-center pb-0 mb-0">
+                    <h2 class="h5 text-secondary mb-4">Pixel Buds Pro 2</h2>
+                    <p class="">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 p-1 border-0 card">
+                <div class="card-header border-0">
+                    <img src="pwatch3.webp"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column align-items-center pb-0 mb-0">
+                    <h2 class="h5 text-secondary mb-4">Google Pixel Watch 3</h2>
+                    <p class="">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                    </p>
+                </div>
+                <div class="card-footer border-0">
+                    <div class="d-flex justify-content-center w-100">
+                        <button class="btn btn-light border"> <span class="px-2 text-secondary">Learn More</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-1 border-0 card">
+                <div class="card-header border-0">
+                    <img src="pixelbudaseries.jpg"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column align-items-center pb-0 mb-0">
+                    <h2 class="h5 text-secondary mb-4">Google Pixel Buds A-Series</h2>
+                    <p class="">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectevtytv
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- big column -->
+    <div class="container">
+        <div class="card border-0 p-1">
+            <div class="card-header border-0">
+                <div class="big_container_img"></div>
+            </div>
+            <div class="card-body d-flex flex-column pb-0 mb-0">
+                <h1 class="h5 text-secondary mt-3">'Best smartphone of 2024'</h1>
+                <p class="">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                    dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                    quasi. Aperiam, consectevtytvaccordion-accordion. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Quas similique aspernatur quibusdam incidunt
+                    inventore nobis vero alias, id iste quisquam deleniti. Quas possimus veritatis dignissimos impedit,
+                    eaque vero labore repellendus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
+                    similique aspernatur quibusdam incidunt
+                    inventore nobis vero alias, id iste quisquam deleniti. Quas possimus veritatis dignissimos impedit,
+                    eaque vero labore repellendus.
+                    <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas similique aspernatur quibusdam
+                    incidunt
+                    inventore nobis vero alias, id iste quisquam deleniti. Quas possimus veritatis dignissimos impedit,
+                    eaque vero labore repellendus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
+                    similique aspernatur quibusdam incidunt
+                    inventore nobis vero alias, id iste quisquam deleniti. Quas possimus veritatis dignissimos impedit,
+                    eaque vero labore repellendus.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact form -->
+    <div class="container-fluid p-0 mt-2">
+        <div class="contact_img">
+            <div class="form_content">
+                <h2 class="text-white my-2">Contact Us</h2>
+                <div class="d-flex justify-content-center align-items-center flex-column w-100">
+                    <div class="card col-9 col-md-6 bg-white mb-2 border"  style="--bs-bg-opacity: .5;">
+                        <div class="card-body text-center ">
+                            <p>What can we help with?</p>
+                        </div>
+                    </div>
+                    <div class="row col-9 col-md-6 mt-3 form">
+                        <div class="col-md-6 d-flex flex-column ps-md-0">
+                            <div class="form-floating mb-1 w-100">
+                                <input class="form-control bg-white" style="--bs-bg-opacity:.5" type="text" name="name"
+                                    id="name" placeholder="Enter name">
+                                <label for="name" class="form-label">Name</label>
+                            </div>
+                            <div class="form-floating mb-1 w-100">
+                                <input class="form-control bg-white" style="--bs-bg-opacity:.5" type="text" name="email"
+                                    id="email" placeholder="Enter email">
+                                <label for="email" class="form-label">Email</label>
+                            </div>
+                            <div class="form-floating mb-1 w-100">
+                                <input class="form-control bg-white" style="--bs-bg-opacity:.5" type="text" name="sub"
+                                    id="sub" placeholder="Enter subject">
+                                <label for="sub" class="form-label">Subject</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pe-md-0">
+                            <div class="form-floating">
+                                <textarea name="details" id="details" class="form-control h-auto bg-white"
+                                    style="--bs-bg-opacity:.5" rows="7" cols="5"></textarea>
+                                <label for="details" class="form-label">Tell us what we can help with:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark border border-white my-2"><span class="px-2">Submit</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adding bs scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
